@@ -1,0 +1,139 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Background image styling */
+body {
+  /* background-image: url('/bg.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  transition: background-color 0.3s ease;
+}
+
+/* Container to center the content */
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Flex container for side-by-side layout */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Pokémon list container with custom scrollbar */
+.pokemon-list-container {
+  
+  overflow-y: auto;
+  border-right: 2px solid #ddd;
+  padding-right: 10px; /* To prevent content from being hidden under the scrollbar */
+  background-color: #f9f9f9; /* Background color for better visibility */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.pokemon-list-container::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.pokemon-list-container::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track background */
+  border-radius: 8px; /* Rounded corners for the track */
+}
+
+.pokemon-list-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 8px; /* Rounded corners for the thumb */
+}
+
+.pokemon-list-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovering */
+}
+
+/* Firefox */
+.pokemon-list-container {
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  scrollbar-color: #888 #f0f0f0; /* Thumb color and track color */
+}
+
+.pokemon-list-container::-moz-scrollbar {
+  width: 12px;
+}
+
+.pokemon-list-container::-moz-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.pokemon-list-container::-moz-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.pokemon-list-container::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.pokemon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Space between items */
+}
+
+.pokemon-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
